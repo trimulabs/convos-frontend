@@ -1,4 +1,3 @@
-// App.tsx
 import React from "react";
 import { Layout } from "antd";
 import { ThemeProvider } from "styled-components";
@@ -12,12 +11,10 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Layout style={{ minHeight: "100vh" }}>
-        <Sidebar />
+        <Navbar />
         <Layout className="site-layout">
-          <Navbar />
-          <Content style={{ margin: "16px" }}>
-            {/* Your main content goes here */}
-          </Content>
+          <Sidebar />
+          <Content style={{}}>{/* Your main content goes here */}</Content>
         </Layout>
       </Layout>
     </ThemeProvider>

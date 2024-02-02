@@ -1,5 +1,3 @@
-// Sidebar.tsx
-import React from "react";
 import { Layout, Menu } from "antd";
 import {
   PhoneOutlined,
@@ -10,9 +8,9 @@ import {
 
 const { Sider } = Layout;
 
-const Sidebar: React.FC = () => {
+const Sidebar = () => {
   return (
-    <Sider width={200} theme="light">
+    <Sider width={240} theme="light">
       <Menu mode="vertical" theme="light">
         <Menu.Item key="1" icon={<PhoneOutlined />}>
           Phone Number Setup

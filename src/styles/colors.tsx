@@ -1,6 +1,7 @@
 const colors = {
   black: "black",
   white: "white",
+  WhiteLilac: "#EFEFF1",
   fontMain: "#231f20",
   fontMainInput: "#231F20",
   fontMainInputDisabled: "#BDBBBC",
