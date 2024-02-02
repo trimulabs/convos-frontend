@@ -12,7 +12,7 @@ import {
 } from "../../Assets/icons/";
 
 const { Header } = Layout;
-// const { Title, Paragraph, Text, Link } = Typography;
+const { Text } = Typography;
 
 const NavbarContainer = styled(Header)`
   display: flex;
@@ -27,11 +27,14 @@ const NavbarContainer = styled(Header)`
   padding: 0;
 `;
 
-const Wrapper = styled("span")`
+const RoundCircle = styled("div")`
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  align-content: center;
+  background-color: ${colors.WhiteLilac};
 `;
 
 const Navbar = () => {
@@ -43,10 +46,10 @@ const Navbar = () => {
         <img src={convoslogo} alt="logo" />
         <Space>
           <img src={people} alt="logo" />
-          {totalConnections}
+          <Text style={{ fontSize: "12px" }}>{totalConnections}</Text>
           <Divider type="vertical" />
           <img src={chat} alt="logo" />
-          {totalMessages} in july
+          <Text style={{ fontSize: "12px" }}>{totalMessages} in july</Text>
         </Space>
       </Space.Compact>
 
@@ -63,12 +66,14 @@ const Navbar = () => {
       />
       <Flex
         justify="space-between"
-        style={{ width: "150px", marginRight: "10px" }}
+        style={{ width: "250px", marginRight: "10px", gap: "10px" }}
       >
         <img src={helo} alt="logo" />
         <img src={dashboard} alt="logo" />
-        <img src={line2} alt="logo" />
-        <Avatar>H</Avatar>
+        <RoundCircle>
+          <img src={line2} alt="logo" />
+        </RoundCircle>
+        <Avatar size={40}>H</Avatar>
       </Flex>
     </NavbarContainer>
   );
