@@ -1,4 +1,4 @@
-import { SideBarProcessListProps } from "./types";
+import { SideBarProcessListProps, BoxModalProps } from "./types";
 export const sideBarProcessList: SideBarProcessListProps[] = [
   {
     id: "1",
@@ -15,5 +15,15 @@ export const sideBarProcessList: SideBarProcessListProps[] = [
   {
     id: "4",
     title: "Send Your First Text!",
+  },
+];
+export const BoxModalList: BoxModalProps[] = [
+  {
+    icon: "Icon Here",
+    title: "I want to get a new phone number",
+  },
+  {
+    icon: "Icon Here",
+    title: "I want to text-enable my existing phone number",
   },
 ];
